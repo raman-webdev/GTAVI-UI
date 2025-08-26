@@ -21,7 +21,7 @@ const App = () => {
       transformOrigin: '50% 50%',
       opacity: 0,
       onUpdate: function(){
-        if (this.progress() >= .9) {
+        if (this.progress() >= .7) {
           document.querySelector('.svg').remove();
           setShowContent(true);
           this.kill();
@@ -60,6 +60,19 @@ const App = () => {
         />
        </svg>
       </div>
+      {showContent && (
+       <div className='main w-full'>
+        <div className='landing w-full h-screen bg-black'>
+          <div className='imagediv relative overflow-hidden w-full h-screen '>
+          <img src="./sky.png" alt="bg-image" className='absolute w-full h-full object-cover ' />
+           <img src="./bg.png" alt="bg-image" className='absolute w-full h-full object-cover' />
+           <img src="./girlbg.png" alt="" className='absolute  -bottom-[30%] left-[30%] -translate-x-1/6 scale-[1.3] object-cover'/>
+          </div>
+        </div>
+
+       </div>
+      )
+      }
     </>
   )
 }
