@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
+import 'remixicon/fonts/remixicon.css'
 
 const App = () => {
 
@@ -76,8 +77,21 @@ const App = () => {
           <div className='imagediv relative overflow-hidden w-full h-screen '>
           <img src="./sky.png" alt="bg-image" className='absolute w-full h-full object-cover ' />
            <img src="./bg.png" alt="bg-image" className='absolute w-full h-full object-cover' />
+           <div className='text absolute leading-none text-white left-[600px] top-1/10 '>
+            <h1 className='text-9xl -ml-12 font-[]'>Grand</h1>
+            <h1 className='text-9xl ml-24 '>Thief</h1>
+            <h1 className='text-9xl'>auto</h1>
+           </div>
            <img src="./girlbg.png" alt="" className='absolute  -bottom-[40%] left-[30%] -translate-x-1/6 scale-[1.3] object-cover'/>
+           <div className='btmbar flex absolute w-full bottom-0 left-0  px-10 py-15 bg-gradient-to-t from-black to-transparent'>
+            <div className='flex gap-4 text-white items-center'>
+            <i class="text-2xl ri-arrow-down-long-line"></i>
+            <h3 className='font-[Helvetica_Now_Display] text-xl '>Scroll</h3>
+            </div>
+            <img src="./ps5.png" alt="" className='h-[55px] px-[40%]'/>
           </div>
+          </div>  
+          
         </div>
 
        </div>
